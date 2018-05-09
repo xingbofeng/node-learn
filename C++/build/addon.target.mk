@@ -98,7 +98,7 @@ INCS_Release := \
 	-I/Users/encounter/.node-gyp/10.0.0/deps/v8/include
 
 OBJS := \
-	$(obj).target/$(TARGET)/hello.o
+	$(obj).target/$(TARGET)/add.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)

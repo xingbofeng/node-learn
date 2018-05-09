@@ -1,2 +1,4 @@
 const addon = require('./build/Release/addon');
-console.log(addon.hello() + addon.world());
+const add = addon.add;
+const args = process.argv.slice(2).map(v => parseInt(v));
+console.log(add(...args));

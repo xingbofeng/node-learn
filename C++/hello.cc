@@ -1,4 +1,3 @@
-// hello.cc
 #include <node.h>
 
 namespace demo {
@@ -12,12 +11,12 @@ using v8::Value;
 
 void World(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "world"));
+  args.GetReturnValue().Set(String::NewFromUtf8(isolate, " World!"));
 }
 
 void Hello(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "hello"));
+  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "Hello,"));
 }
 
 void init(Local<Object> exports) {
@@ -27,4 +26,4 @@ void init(Local<Object> exports) {
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, init)
 
-}  // namespace demo
+}
