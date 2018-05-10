@@ -1,6 +1,6 @@
 #include <node.h>
 
-namespace demo {
+namespace add {
 
 using v8::Exception;
 using v8::FunctionCallbackInfo;
@@ -30,8 +30,8 @@ void Add(const FunctionCallbackInfo<Value>& args) {
   args.GetReturnValue().Set(num);
 }
 
-void init(Local<Object> exports) {
-  NODE_SET_METHOD(exports, "add", Add);
+void init(Local<Object> exports, Local<Object> module) {
+  NODE_SET_METHOD(module, "exports", Add);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, init)
