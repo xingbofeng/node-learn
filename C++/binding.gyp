@@ -11,6 +11,14 @@
     {
       "target_name": "callback",
       "sources": [ "callback.cc" ]
+    },
+    {
+      "target_name": "datas",
+      "sources": [ "datas.cc" ]
+    },
+    {
+      "target_name": "factory",
+      "sources": [ "factory.cc" ]
     }
   ]
 }
