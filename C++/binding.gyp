@@ -19,6 +19,10 @@
     {
       "target_name": "factory",
       "sources": [ "factory.cc" ]
+    },
+    {
+      "target_name": "fabonacci",
+      "sources": [ "fabonacci.cc" ]
     }
   ]
 }
