@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+<title>��Ѷ��˽����</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name='apple-touch-fullscreen' content='yes'>
+<meta name="full-screen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+<link type="text/css" rel="stylesheet" href="//mat1.gtimg.com/www/css/article/global_v1.0.3.css" />
+<style type="text/css">
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "΢���ź�","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%}
+.logoLayout{width:100%;height:98px;background:#f7f6f6;border-bottom:2px solid #e7e7e7;}
+.logo{width:1000px;height:98px;margin:0 auto;background:url(//mat1.gtimg.com/www/images/qq2012/privacyLogo.png) no-repeat left center;}
+.layout{width:1000px;margin:0 auto;border-bottom:1px solid #d1d1d1;padding-bottom:20px;}
+.layout h1{font-size:20px;line-height:80px;text-indent:62px;font-family:"΢���ź�";color:#0c0c0c;}
+.layout h2{font-size:18px;font-family:"΢���ź�";height:38px;line-height:38px;margin:38px 0 10px;border-left:3px solid #187ac7;background:#eaf1fa;text-indent:16px;color:#187ac7;}
+.layout h3{font-size:14px;line-height:18px;margin:20px 0 10px;color:#355a77;font-weight:bold;}
+.layout p{font-size:14px;line-height:32px;margin:20px 0 10px}
+.layout ul{margin:10px 10px 10px 30px}
+.layout li{padding-left:17px;font-size:14px;line-height:32px;background:url(//mat1.gtimg.com/www/images/qq2012/privacyIcon.png) no-repeat left 12px;}
+.layout .inner{margin:10px 10px 10px 0;}
+.layout .inner li{background:url(//mat1.gtimg.com/www/images/qq2012/privacyIcon.png) no-repeat left -482px;}
+.layout strong{color:#355a77;}
+.clear{clear:both;}
+.mininavRight{float:right;}
+.main { position:relative; z-index:20 }
+.scrollBtn { z-index:50 }
+.about-video-foot .bg-mb { display:block}
+.bg-mb { display:none }
+.VRelaLinkStyle{ background:url(//mat1.gtimg.com/news/images/article/icon_video.png) no-repeat 2px 0; padding-left:25px;  }
+#C-Main-Article-QQ .hd { z-index:30 }
+.m-mod-1 {}
+.m-mod-1 h2 { font-weight: bold; font-size: 14px; margin-bottom: 8px }
+
+#videoListWithFollow{ width:640px; overflow:hidden}
+#videoListWithFollow ul{width:666px; position:relative; left:-26px}
+#videoListWithFollow li{width:140px; float:left; margin:0 0 0 26px; display:inline; overflow:hidden}
+#videoListWithFollow .pic{width:140px; height:80px; overflow:hidden; display:block; position:relative;text-decoration:none}
+#videoListWithFollow img{width:140px; background:#000; border:0; vertical-align:middle}
+.newVideoNumWF{display:none; font:10px/16px "Arial"; -webkit-text-size-adjust:100%; color:#fff; position:absolute; z-index:2;left:6px; bottom:4px; padding-left:21px; background:url(//mat1.gtimg.com/news/dc/images/sprite_collect.32.png) no-repeat 0 -79px;_background:url(//mat1.gtimg.com/news/dc/images/sprite_collect.ie6.png) no-repeat 0 -79px}
+.newVideoFBtn{ width:18px; height:17px; position:relative; display:block; z-index:3; background:url(//mat1.gtimg.com/news/dc/images/sprite_collect.32.png) no-repeat 0 0;_background:url(//mat1.gtimg.com/news/dc/images/sprite_collect.ie6.png) no-repeat 0 0; margin:-21px 0 0 117px; text-decoration:none; cursor:pointer}
+.newVideoFBtn:hover{ background-position:0 -25px}
+.newVideoFBtnEd,.newVideoFBtnEd:hover{background-position:0 -50px}
+#videoListWithFollow p{font:12px/17px "simsun"; padding:7px 3px 0}
+#videoListWithFollow p a{color:#000; text-decoration:none}
+#videoListWithFollow p a:hover{text-decoration:underline}
+.mask_video_bg { position: absolute; z-index:1; left: 0; top:50px; width:100%; height:30px; background: url("//mat1.gtimg.com/news/images/article/mask_video_1.png") no-repeat left bottom; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="//mat1.gtimg.com/news/images/article/mask_video_1.png") }
+#C-Main-Article-QQ #videoListWithFollow .hd{border-bottom:0}
+
+/* sogou���� */
+#sogouTips { position: absolute; left: 9999999999em; z-index:10;width:56px; height:24px}
+#sogouTips a { background: url(//mat1.gtimg.com/www/sogou/sogou_tips_v1.png) no-repeat 0 0; display: block; width: 33px; height: 24px; line-height: 24px; padding-left: 23px; color: #000; font-size: 12px; text-decoration: none; _position:relative; margin: -32px 0 0; }
+#sogouTips a:hover { color:#45a1ea; background-position: 0 -34px }
+
+.ad-cnt-1 #F_Z_Width1 { margin:-18px 0 44px }
+.infoNum{color:#fff;}
+.layout .ysNav{width:1000px;height:266px;background:#f8f8f8;}
+.layout .ysNav ul{width:500px;float:left;margin:13px 0 0;padding:0;}
+.layout .ysNav li{width:500px;font-size:14px;line-height:30px;float:left;margin:0;padding:0;color:#187ac7;text-indent:66px;background:none;}
+.layout .ysNav li a{color:#187ac7;}
+.layout .ysNav li a:hover{color:#105a94;}
+#tcopyright{color:#333!important;padding-top:15px;}
+#tcopyright a{color:#333!important;}
+#toTop{width:54px;height:54px;display:block;position:fixed;_position:absolute;right:25px;bottom:45px;background:url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.6.1.png) -700px -110px;opacity:0.3;filter:alpha(opacity=30);}
+#toTop:hover{opacity:1;filter:alpha(opacity=100);}
+
+.footer{display:none;padding:10px 45px 12px 0;overflow:hidden;position:relative;background: #404a54;}
+.footer .foot_user{display: none;}
+.footer .links{height:25px;line-height:25px;color:#565e61;font-size:13px;text-align:left}
+.footer .links a{color:#95a0ac;margin:0 0 0 8px;display:inline;float:left}
+.footer .links a:before{content:'';background:#565e61;width:1px;height:12px;display:inline-block;vertical-align:-1px;font-size:1em;color:#565e61;margin-right:8px}
+.footer .links a:first-child:before{display:none}
+.footer .copyright{font-size:13px;color:#707982;text-align:left;text-indent:8px;white-space:nowrap}
+
+@media screen and (max-width: 750px){
+	body{width: 100%; position: relative;font-family: Helvetica,STHeiti,Droid Sans Fallback!important; }
+	.layout, .logo{width: 100%;}
+	.logoLayout, .logo{height: 62px;}
+	.logo{background-size: 50%;}
+	.nav{display: none;}
+	.layout{position: relative;overflow: hidden;}
+	.layout h1{text-indent: 18px;}
+	.layout .ysNav{height: auto; width: 100%;}
+	.layout .ysNav ul, .layout .ysNav li{float: none;}
+	.layout .ysNav ul{margin: 0;}
+	.layout .ysNav li{width: auto; text-indent: 18px;}
+	.tcopyright{display: none;}
+	.layout h2, .layout h3, .layout h4, .layout p{padding: 0 10px;}
+	.footer{display: block;}
+}
+</style>
+<script src="//mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!--include virtual="/public/final12/nav_v2.htm"-->
+<!--include virtual="/public/final12/css_v2.htm"-->
+
+<!--��¼���v2017-->
+<div id="qq_navWrap"></div>
+<script src="//mat1.gtimg.com/pingjs/ext2020/dc2017/dist/login/login.js"></script>
+
+<div class="logoLayout">
+	<div class="logo"></div>
+</div>
+<div class="layout">
+	<h1>��˽����</h1>
+	<div class="ysNav">
+		<ul>
+			<li><a href="#q1">����</a></li>
+			<li><a href="#q2">���ǿ����ռ�����Ϣ</a></li>
+			<li><a href="#q3">���ǿ������ʹ����Ϣ</a></li>
+			<li><a href="#q4">����η��ʺͿ����Լ��ĸ�����Ϣ</a></li>
+			<li><a href="#q5">���ǿ��ܷ�������Ϣ</a></li>
+			<li><a href="#q6">��Ϣ��ȫ</a></li>
+			<li><a href="#q7">����������Ϣ</a></li>
+			<li><a href="#q8">�����������и�����Ϣ</a></li>
+		</ul>
+		<ul>
+			<li><a href="#q9">���ǿ�������ռ���Ϣ</a></li>
+			<li><a href="#q10">������</a></li>
+			<li><a href="#q11">���ǿ����������͵��ʼ�����Ϣ</a></li>
+			<li><a href="#q12">��˽���ߵ���������</a></li>
+			<li><a href="#q13">δ������ʹ�����ǵķ���</a></li>
+			<li><a href="#q14">��˽���ߵ����÷�Χ</a></li>
+			<li><a href="#q15">���</a></li>
+		</ul>
+	</div>
+	<h2 id="q1">����</h2>
+	<p>��Ѷ�����û�����˽������ʹ�����ǵķ���ʱ�����ǿ��ܻ��ռ���ʹ�����������Ϣ������ϣ��ͨ��������˽���ߡ�����˵������ʹ�����ǵķ���ʱ����������ռ���ʹ�á�����ͷ�����Щ��Ϣ���Լ�����Ϊ���ṩ�ķ��ʡ����¡����ƺͱ�����Щ��Ϣ�ķ�ʽ��������˽���ߡ�������ʹ�õ���Ѷ����ϢϢ��أ�ϣ������ϸ�Ķ�������Ҫʱ�����ձ�����˽���ߡ���ָ������������Ϊ�ʵ���ѡ�񡣱�����˽���ߡ����漰����ؼ����ʻ㣬���Ǿ����Լ�����Ҫ�ı��������ṩ��һ��˵�������ӣ��Ա��������⡣</p>
+	<h3>��ʹ�û����ʹ�����ǵķ��񣬼���ζ��ͬ�����ǰ��ձ�����˽���ߡ��ռ���ʹ�á�����ͷ������������Ϣ��</h3>
+	<p>��Ա�����˽���ߡ�������������κ����⣬��ͨ��<a href="http://kf.qq.com/" target="_blank">http://kf.qq.com/</a>��������ϵ��</p>
+	
+	<h2 id="q2">���ǿ����ռ�����Ϣ</h2>
+	<p>�����ṩ����ʱ�����ܻ��ռ��������ʹ�����������йص���Ϣ����������ṩ�����Ϣ�������޷�ע���Ϊ���ǵ��û����޷����������ṩ��ĳЩ���񣬻����޷��ﵽ��ط�����ﵽ��Ч����</p>
+	<h3>���ṩ����Ϣ</h3>
+	<ul>
+		<li>����ע���˻���ʹ�����ǵķ���ʱ���������ṩ����ظ�����Ϣ������绰���롢�����ʼ������п��ŵȣ�</li>
+		<li>��ͨ�����ǵķ������������ṩ�Ĺ�����Ϣ���Լ���ʹ�����ǵķ���ʱ���������Ϣ��</li>
+	</ul>
+	<h3>������������������Ϣ</h3>
+	<ul>
+		<li>������ʹ�����ǵķ���ʱ���ṩ�й����Ĺ�����Ϣ��</li>
+	</ul>
+	<h3>���ǻ�ȡ��������Ϣ</h3>
+	<p>��ʹ�÷���ʱ���ǿ����ռ�������Ϣ��</p>
+	<ul>
+		<li><strong>��־��Ϣ��</strong>ָ��ʹ�����ǵķ���ʱ��ϵͳ����ͨ��cookies��web beacon��������ʽ�Զ��ɼ��ļ�����Ϣ��������</li>
+		<ul class="inner">
+			<li>�豸��������Ϣ�����������ƶ��豸����ҳ����������ڽ������Ƿ���������������ṩ��������Ϣ������IP��ַ���ƶ��豸���õİ汾���豸ʶ���룻</li>
+			<li>��ʹ�����Ƿ���ʱ�������������Ϣ��������ʹ�õ���ҳ����������ʵ��罻ý��ҳ��url��ַ���Լ�����ʹ�����Ƿ���ʱ�����Ҫ���ṩ��������Ϣ���������飻</li>
+			<li>�й�����ʹ�õ��ƶ�Ӧ�ã�APP����������������Ϣ���Լ�������ʹ�øõ��ƶ�Ӧ�ú���������Ϣ��</li>
+			<li>��ͨ�����ǵķ������ͨѶ����Ϣ��������ͨѶ���˺ţ��Լ�ͨѶʱ�䡢���ݺ�ʱ����</li>
+			<li>��ͨ�����ǵķ����������������������Ϣ��Ԫ���ݣ�������������ϴ��Ĺ�����Ƭ��¼������ڡ�ʱ���ص�ȡ�</li>
+		</ul>
+		<li><strong>λ����Ϣ��</strong>ָ�������豸��λ���ܲ�ʹ�����ǻ���λ���ṩ����ط���ʱ���ռ����й���λ�õ���Ϣ��������</li>
+		<ul class="inner">
+			<li>��ͨ�����ж�λ���ܵ��ƶ��豸ʹ�����ǵķ���ʱ��ͨ��GPS��WiFi�ȷ�ʽ�ռ������ĵ���λ����Ϣ��</li>
+			<li>���������û��ṩ�İ�������������λ�õ�ʵʱ��Ϣ���������ṩ���˻���Ϣ�а����������ڵ�����Ϣ�������������ϴ�����ʾ����ǰ��������������λ�õĹ�����Ϣ�����������˹�������Ƭ�����ĵ��������Ϣ��</li>
+			<li>������ͨ���رն�λ���ܣ�ֹͣ�����ĵ���λ����Ϣ���ռ���</li>
+		</ul>
+	</ul>
+	
+	<h2 id="q3">���ǿ������ʹ����Ϣ</h2>
+	<p>���ǿ��ܽ��������ṩ����Ĺ���֮�����ռ�����Ϣ����������;��</p>
+	<ul>
+		<li>�����ṩ����</li>
+		<li>�������ṩ����ʱ������������֤���ͻ����񡢰�ȫ������թƭ��⡢�浵�ͱ�����;��ȷ�����������ṩ�Ĳ�Ʒ�ͷ���İ�ȫ�ԣ�</li>
+		<li>������������·��񣬸����������з���</li>
+		<li>ʹ���Ǹ����˽�����ν����ʹ�����ǵķ��񣬴Ӷ�����Եػ�Ӧ���ĸ��Ի��������������趨��λ���趨�����Ի��İ��������ָʾ��������������û�������������Ļ�Ӧ��</li>
+		<li>�����ṩ����������صĹ��������ձ�Ͷ�ŵĹ�棻</li>
+		<li>�������Ƿ����еĹ��������������ƹ���Ч���������Ը��ƣ�</li>
+		<li>������֤���������������</li>
+		<li>���������й����ǲ�Ʒ�ͷ���ĵ��顣</li>		
+	</ul>
+	<p>Ϊ�������и��õ����顢�������ǵķ������ͬ���������;���ڷ�����ط��ɷ����ǰ���£����ǿ��ܽ�ͨ��ĳһ��������ռ�����Ϣ���Ի㼯��Ϣ���߸��Ի��ķ�ʽ���������ǵ������������磬����ʹ�����ǵ�һ�����ʱ���ռ�����Ϣ����������һ���������������ṩ�ض����ݣ�������չʾ������صġ����ձ����͵���Ϣ�������������ط������ṩ����Ӧѡ���Ҳ������Ȩ���ǽ��÷������ṩ�ʹ������Ϣ�������ǵ��������� </p>
+	
+	<h2 id="q4">����η��ʺͿ����Լ��ĸ�����Ϣ</h2>
+	<p>���ǽ���һ�п��ܲ�ȡ�ʵ��ļ����ֶΣ���֤�����Է��ʡ����º͸����Լ���ע����Ϣ��ʹ�����ǵķ���ʱ�ṩ������������Ϣ���ڷ��ʡ����¡�������ɾ��ǰ����Ϣʱ�����ǿ��ܻ�Ҫ��������������֤���Ա����˻���ȫ��</p>
+	
+	<h2 id="q5">���ǿ��ܷ�������Ϣ</h2>
+	<p>�����������⣬<strong>δ����ͬ��</strong>�������Լ����ǵĹ�����˾�������κε������������ĸ�����Ϣ��</p>
+	<ul>
+		<li>�����Լ����ǵĹ�����˾�����ܽ����ĸ�����Ϣ�����ǵĹ�����˾��������鼰����������Ӧ�̡��а��̼�����������������Ƿ��������ʼ�������֪ͨ��ͨѶ�����ṩ�̡�Ϊ�����ṩλ�����ݵĵ�ͼ����Ӧ�̣����������ǿ��ܲ���λ�������ڵķ��򣩣�����������;��</li>
+		<ul class="inner">
+			<li>�����ṩ���ǵķ���</li>
+			<li>ʵ�֡����ǿ������ʹ����Ϣ����������Ŀ�ģ�</li>
+			<li>���������ڡ���Ѷ����Э�顷�򱾡���˽���ߡ��е��������ʹ���ǵ�Ȩ����</li>
+			<li>���⡢ά���͸������ǵķ���</li>
+		</ul>
+	</ul>
+	<p>�����ǻ����ǵĹ�����˾���κ������������������ĸ�����Ϣ�����ǽ�Ŭ��ȷ���õȵ�������ʹ�����ĸ�����Ϣʱ���ر�����˽���ߡ�������Ҫ�������ص������ʵ��ı��ܺͰ�ȫ��ʩ��</p>
+	<ul>
+		<li>��������ҵ��ĳ�����չ�������Լ����ǵĹ�����˾�п��ܽ��кϲ����չ����ʲ�ת�û����ƵĽ��ף����ĸ�����Ϣ�п�����Ϊ���ཻ�׵�һ���ֶ���ת�ơ����ǽ���ת��ǰ֪ͨ����</li>
+		<li>���ǻ����ǵĹ�����˾������Ϊ������Ҫ���������������¶���ĸ�����Ϣ��</li>
+		<ul class="inner">
+			<li>�������õķ��ɷ��棻</li>
+			<li>���ط�Ժ������������ɳ���Ĺ涨��</li>
+			<li>��������������ص�Ҫ��</li>
+			<li>Ϊ�������õķ��ɷ��桢ά����ṫ�����棬�򱣻����ǵĿͻ������ǻ����ǵļ��Ź�˾�������û����Ա�������ͲƲ���ȫ��Ϸ�Ȩ���������������;��</li>
+		</ul>
+	</ul>
+	
+	<h2 id="q6">��Ϣ��ȫ</h2>
+	<p>���ǽ��ڱ�����˽���ߡ�����Ŀ����������ڼ�ͷ��ɷ���Ҫ���ʱ���ڱ������ĸ�����Ϣ��</p>
+	<p>����ʹ�ø��ְ�ȫ�����ͳ����Է���Ϣ�Ķ�ʧ������ʹ�á�δ����Ȩ��������¶�����磬��ĳЩ�����У����ǽ����ü��ܼ���������SSL�����������ṩ�ĸ�����Ϣ�����������⣬���ڼ����������Լ����ܴ��ڵĸ��ֶ����ֶΣ��ڻ�������ҵ������߾����ܼ�ǿ��ȫ��ʩ��Ҳ������ʼ�ձ�֤��Ϣ�ٷ�֮�ٵİ�ȫ������Ҫ�˽⣬���������ǵķ������õ�ϵͳ��ͨѶ���磬�п��������ǿɿط�Χ������ض��������⡣</p>
+	
+	<h2 id="q7">����������Ϣ</h2>
+	<p>���ǵĶ�����񣬿������������Լ����罻���磬Ҳ��ʹ�ø÷���������û������������������Ϣ�����磬�������ǵķ��������ϴ��򷢲�����Ϣ�������������ĸ�����Ϣ�����������������������������ϴ��򷢲�����Ϣ�����Ļ�Ӧ���Լ���������Щ��Ϣ�йص�λ�����ݺ���־��Ϣ��ʹ�����Ƿ���������û�Ҳ�п��ܷ��������йص���Ϣ������λ�����ݺ���־��Ϣ�����ر��ǣ����ǵ��罻ý�������רΪʹ����������ص��û�������Ϣ����ƣ�������ʹ������Ϣʵʱ���㷺�ش��ݡ�ֻҪ����ɾ��������Ϣ���й���Ϣ��һֱ�����ڹ������򣻼�ʹ��ɾ��������Ϣ���й���Ϣ�Կ����������û��������ǿ��Ƶķǹ��������������ػ��桢���ƻ򴢴棬���������û���õȵ������ڹ������򱣴档</p>
+	<p><strong>��ˣ�������������ͨ�����ǵķ����ϴ��������ͽ�������Ϣ���ݡ�</strong>��һЩ����£�����ͨ������ĳЩ�������˽�趨��������Ȩ�����������Ϣ���û���Χ����Ҫ������ǵķ�����ɾ�����������Ϣ����ͨ���õ��ر���������ṩ�ķ�ʽ������</p>
+	
+	<h2 id="q8">�����������и�����Ϣ</h2>
+	<p>ĳЩ������Ϣ���������Կ��ܱ���Ϊ�����и�����Ϣ�������������塢�ڽ̡����˽�����ҽ����Ϣ�ȡ��������������Ϣ�����и�����Ϣ�ܵ������ϸ�ı�����</p>
+	<p>��ע�⣬����ʹ�����ǵķ���ʱ���ṩ���ϴ��򷢲������ݺ���Ϣ�������й����罻�����Ƭ����Ϣ�������ܻ�й¶�������и�����Ϣ������Ҫ�����ؿ��ǣ��Ƿ���ʹ�����ǵķ���ʱ��¶������и�����Ϣ��</p>
+	<h3>��ͬ�ⰴ������˽���ߡ�������Ŀ�ĺͷ�ʽ�������������и�����Ϣ��</h3>
+	
+	<h2 id="q9">���ǿ�������ռ���Ϣ</h2>
+	<p>���ǻ����ǵĵ�����������飬����ͨ��cookies��web beacon�ռ���ʹ��������Ϣ�������õ���Ϣ����Ϊ��־��Ϣ��</p>
+	<p>����ʹ���Լ���cookies��web beacon��Ŀ����Ϊ���ṩ�����Ի����û�����ͷ��񣬲�����������;��</p>
+	<ul>
+		<li>��ס�������ݡ����磺cookies��web beacon���������Ǳ�������Ϊ���ǵ�ע���û������ݣ��򱣴����������ṩ���й�����ϲ�û�������Ϣ��</li>
+		<li>������ʹ�����Ƿ������������磬���ǿ�����cookies��web beacon���˽���ʹ�����ǵķ������ʲô�������Щ��ҳ������������Ļ�ӭ��</li>
+		<li>����Ż���Cookies��web beacon���������Ǹ���������Ϣ�������ṩ������صĹ����ǽ����ձ�Ĺ��Ͷ�š�</li>
+	</ul>
+	<p>����Ϊ����Ŀ��ʹ��cookies��web beacon��ͬʱ�����ܽ�ͨ��cookies��web beacon�ռ��ķǸ���������Ϣ����ͳ�Ƽӹ����ṩ������̻�����������飬���ڷ����û����ʹ�����ǵķ��񣬲����ڹ�����</p>
+	<p>���ǵĲ�Ʒ�ͷ����Ͽ��ܻ��й���̻��������������õ�cookies��web beacon����Щcookies��web beacon���ܻ��ռ�������صķǸ���������Ϣ�������ڷ����û����ʹ�øõȷ����������������ܸ���Ȥ�Ĺ�棬�����������������Ч������Щ������cookies��web beacon�ռ���ʹ�øõ���Ϣ�����ܱ�����˽���ߡ�Լ�������������ʹ���ߵ���˽����Լ�������ǲ��Ե�������cookies��web beacon�е����Ρ�</p>
+	<p>������ͨ����������þܾ������cookies��web beacon������ע�⣬���ͣ��cookies��web beacon�����п����޷�������ѵķ������飬ĳЩ����Ҳ�����޷�����ʹ�á�ͬʱ���������յ�ͬ�������Ĺ�棬����Щ�������������Իή�͡�</p>
+	
+	<h2 id="q10">������</h2>
+	<p>���ǿ���ʹ�����������Ϣ�������ṩ����������صĹ�档</p>
+	<p>����Ҳ����ʹ��������Ϣ��ͨ�����ǵķ��񡢵����ʼ���������ʽ��������Ӫ����Ϣ���ṩ���ƹ����ǻ��������������Ʒ�ͷ���</p>
+	<ul>
+		<li>���ǵ���Ʒ��������ǵĹ�����˾�ͺ���������Ʒ����񣬰�����ʱͨѶ��������ý����񡢻������ַ����罻������񡢸�����񡢻�������������λ�ú͵�ͼ����Ӧ�������ͷ������ݹ��������ͷ������Ϲ����񡢻��������ڣ��Լ������罻ý�塢���֡�����������Ѷ��ͨѶ���������ͳ�ơ�<strong>����������</strong>������</li>
+		<li>����������������Ӧ�̣��Լ��������йصĵ�������Ʒ�����ʳ��Ͳ��������������֡���Ӱ�����ӡ��ֳ����ݼ��������������֡���ᡢ��־�����������װ�����Ρ��鱦����ױƷ�����˽��������������ӡ��ղ�Ʒ���������󡢵������Ҿ�װ�κͰ��衢����������Ƶꡢ��ͨ�����Ρ����С����ռ��������ڷ��񡢻�Ա���ֺͽ����ƻ����Լ�������Ϊ����������ص�������Ʒ�����</li>
+		<p>������ϣ�����ǽ����ĸ�����Ϣ����ǰ�������;��������ͨ�������ڹ�����ṩ�������ʾ�������ض��������ṩ��ָ����Ҫ������ֹͣΪ������;ʹ�����ĸ�����Ϣ��</p>
+	</ul>
+	
+	<h2 id="q11">���ǿ����������͵��ʼ�����Ϣ</h2>
+	<h4>�ʼ�����Ϣ����</h4>
+	<p>����ʹ�����ǵķ���ʱ�����ǿ���ʹ��������Ϣ�������豸���͵����ʼ������Ż�����֪ͨ��������ϣ���յ���Щ��Ϣ�����԰������ǵ������ʾ�����豸��ѡ��ȡ�����ġ�</p>
+	<h4>������йصĹ���</h4>
+	<p>���ǿ����ڱ�Ҫʱ��������ϵͳά������ͣĳһ�����ʱ����������������йصĹ��档�������޷�ȡ����Щ������йء����ʲ������ƹ�Ĺ��档</p>
+	
+	<h2 id="q12">��˽���ߵ���������</h2>
+	<p>���ǵķ�����ܰ������������������ṩ���罻ý����������񣨰�����վ�������磺</p>
+	<ul>
+		<li>������ ������������ĳЩ���ݷ��������ǵķ��񣬻������õ��������߷����¼���ǵķ�����Щ���ܿ��ܻ��ռ����������Ϣ������������־��Ϣ���������������ĵ���װ��cookies���Ӷ����������������ܣ�</li>
+		<li>����ͨ���������Ƿ����������ʽ�����ṩ���ӣ�ʹ�����Խ���������ķ������վ��</li>
+	</ul>
+	<p>�õȵ������罻ý������������������صĵ�������������Ӫ����ʹ�øõȵ��������罻ý�������������񣨰�������õȵ������ṩ���κθ�����Ϣ�������ܸõ������ķ��������˽���ߣ����ǡ�ͨ�÷�������򱾡���˽���ߡ���Լ��������Ҫ��ϸ�Ķ������<strong>������˽���ߡ����������������ռ�����Ϣ�������������κε������ṩ�ķ�������������Ϣʹ�ù������Ƕ��κε�����ʹ�������ṩ����Ϣ���е��κ����Ρ�</strong></p>
+	
+	<h2 id="q13">δ������ʹ�����ǵķ���</h2>
+	<p>���ǹ�����ĸ��໤��ָ��δ��ʮ�����δ������ʹ�����ǵķ������ǽ���δ�����˹������ǵĸ�ĸ��໤���Ķ�������˽���ߡ���������δ���������ύ�ĸ�����Ϣ֮ǰѰ��ĸ��໤�˵�ͬ���ָ����</p>
+	
+	<h2 id="q14">��˽���ߵ����÷�Χ</h2>
+	<p>��ĳЩ�ض������⣬�������еķ�������ñ�����˽���ߡ�����Щ�ض����������ض�����˽���ߡ�<strong>���ĳЩ�ض�������ض���˽���ߣ����������˵�������ڸõȷ��������ʹ��������Ϣ��</strong>���ض��������˽���߹��ɱ�����˽���ߡ���һ���֡�<strong>������ض��������˽�����뱾����˽���ߡ��в�һ��֮�������ø��ض��������˽���ߡ�</strong></p>
+	<p>��������˽���ߡ����й涨�⣬������˽������ô��ｫ�롶��Ѷ����Э�顷������Ĵ��������ͬ�ĺ��塣</p>
+	<h3>����ע�⣬������˽���ߡ������������������</h3>
+	<ul>
+		<li>ͨ�����ǵķ��������ĵ��������񣨰����κε�������վ���ռ�����Ϣ��</li>
+		<li>ͨ�������Ƿ����н��й������������˾��������ռ�����Ϣ��</li>
+	</ul>
+	
+	<h2 id="q15">���</h2>
+	<p>���ǿ�����ʱ�޶�������˽���ߡ�������õ��޶����ɱ�����˽���ߡ���һ���֡�<strong>��õ��޶�������ڱ�����˽���ߡ���Ȩ����ʵ�ʼ��٣����ǽ����޶���Чǰͨ������ҳ������λ����ʾ���������͵����ʼ�����������ʽ֪ͨ�����ڸ�������£���������ʹ�����ǵķ��񣬼���ʾͬ���ܾ��޶��ı�����˽���ߡ���Լ����</strong></p>
+	<div class="clear"></div>
+</div>
+<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">������Ѷ</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">����Э��</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">��˽����</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">����ƽ̨</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">������</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">��Ѷ��Ƹ</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">��Ѷ����</a> | <a href="https://cloud.tencent.com/?from=txwdibu" target="_blank" rel="nofollow">��Ѷ��</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">�ͷ�����</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">�ٱ�����</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">��վ����</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2018 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">��Ѷ��˾</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">��Ȩ����</a>
+	</div>
+</div><!--[if !IE]>|xGv00|1846ccac67b3b46811044596d33e3588<![endif]-->
+<!-- �ֻ��� -->
+<div class="footer">
+    <!-- <div class="foot_user">
+        <strong></strong>
+        <span class="foot_logout">[ע��]</span>
+        <span class="foot_login">[��¼]</span>
+    </div> -->
+    <div class="links">
+        <a href="http://url.cn/JVoGlc" class="repweb">����</a>
+        <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm">�ٱ�����</a>
+        <!-- <a href="javascript:void(0)" class="pcs">���԰�</a> -->
+    </div>
+    <div class="copyright">
+        Copyright &copy; 1998 - <span id="mb_cpy_year">2016</span> Tencent. ��Ѷ�Ƽ������������޹�˾ All Rights Reserved
+    </div>
+    <div class="gotop"></div>
+</div>
+<!-- �ֻ��� end -->
+<a href="javascript:void(0)" target="_self" id="toTop" title="���ض���" style="display:none" onclick="window.scrollTo(0,0);return false"></a>
+
+<!-- #include virtual="/qq2012/indexjs/pingjs.htm"-->
+<!-- ����֧��˫Э�� -->
+<script language="javascript" src="//pingjs.qq.com/tcss.ping.https.js"></script>
+<script language="javascript">if(typeof(pgvMain) == 'function')pgvMain();</script>
+
+<script type="text/javascript">
+function toTopHide(){
+    if(document.documentElement.scrollTop+document.body.scrollTop > 400){
+        if(!(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent)))){
+            document.getElementById("toTop").style.display = "block";
+        }
+    }else{
+        document.getElementById("toTop").style.display = "none";
+    }
+}
+if(!-[1,]&&!window.XMLHttpRequest){}else{
+	window.onscroll = function(){
+		toTopHide();
+	}
+}
+(function(){
+	var now = new Date(),
+		year = now.getFullYear();
+
+	year = year<2016 ? 2016 : year;
+	document.getElementById('mb_cpy_year').innerText = year+'';
+})();
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+function topFixed(){
+	if(document.documentElement.scrollTop > 400){
+		document.getElementById("toTop").style.display = "block";
+	}else{
+		document.getElementById("toTop").style.display = "none";
+	}
+	document.getElementById("toTop").style.top = (document.documentElement.clientHeight + document.documentElement.scrollTop - document.getElementById("toTop").clientHeight - 45) + "px";
+}
+window.onscroll = function(){
+	topFixed();
+}
+</script>
+<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|f7e22e8a8243799e25d33ce0cc0fc75e<![endif]-->
